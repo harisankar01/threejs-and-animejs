@@ -1,8 +1,6 @@
 import anime from 'animejs'
-export function but(lighet,action,ref,sper,butr,nw){
+export function but(lighet,sper,butr,nw){
     lighet.visible=!lighet.visible;
-  	action.play();
-    ref.visible=!ref.visible;
     sper.visible=!sper.visible;
     sper.position.set(0,6,-24);
     butr.remove();

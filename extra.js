@@ -2,7 +2,7 @@ import * as THREE from 'three'
 import anime from 'animejs'
 export function add(scene){
 var game=new Array();
-const shine =new THREE.TextureLoader().load('./assets/star.jpg') 
+const shine =new THREE.TextureLoader().load('./images/star.jpg') 
 const geo=new THREE.IcosahedronGeometry(1.6,0);
 const mat=new THREE.MeshStandardMaterial({color: 0xFFF8DC,map:shine, normalMap: shine})
 for ( let i = 0; i < 200; i ++ ) { 

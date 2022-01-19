@@ -1,0 +1,38 @@
+body {
+  position: absolute;
+  width: 1000px;
+  height: 800px;
+  background-color: antiquewhite;
+}
+
+.asset img {
+  background-color: aqua;
+  hyphens: inherit;
+  height: 30;
+  width: 30;
+}
+#bg {
+  visibility: hidden;
+}
+h1 {
+  position: relative;
+  color: rgba(231, 220, 63, 0.61);
+  margin: 20px auto;
+}
+.after {
+  z-index: 99;
+  display: block;
+  visibility: visible;
+  position: absolute;
+}
+.after {
+  height: 600px;
+  width: 700px;
+  display: flex;
+  align-items: center;
+  z-index: 1;
+}
+#last {
+  position: absolute;
+  justify-content: center;
+}

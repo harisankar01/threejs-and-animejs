@@ -1,6 +1,5 @@
 import * as THREE from 'three'
 import {OrbitControls} from 'three/examples/jsm/controls/OrbitControls';
-import { FBXLoader } from 'three/examples/jsm/loaders/FBXLoader.js';
 export function lights(){
 const ligh=new THREE.SpotLight(0xFFFCFC)
 ligh.castShadow = true;
@@ -40,7 +39,7 @@ return light;
 }
 
 export function spear(){
-const mis =new THREE.TextureLoader().load('./assets/misssile.jpeg')
+const mis =new THREE.TextureLoader().load('./images/misssile.jpeg')
 const missile = new THREE.ConeGeometry( 4.92,21,33,25,false,1.1,6.285 );
 const mateial = new THREE.MeshPhongMaterial( { color: 0xCEF000,emissive: 0x150306,map:mis,shininess:10 } );
 const sper=new THREE.Mesh( missile, mateial );
@@ -68,15 +67,10 @@ export function createLight( color ) {
         return ight;
 }
 
-export function rotate(torus,ref,revo,time){
+export function rotate(torus,revo,time){
     torus.rotation.y+=0.02;
   torus.rotation.z+=13;
   torus.rotation.x-=0.01;
-ref.rotation.x-=0.02;
-ref.rotation.y-=0.02;
-ref.position.y-=0.02;
-ref.position.x+=0.2;
-ref.position.y+=0.01;
 revo.position.x = Math.sin( time * 1 ) * 81 ;
 revo.position.y = Math.sin( time * 1.1 ) * 21 + 9;
 revo.position.z = Math.sin( time * 1.2 ) * -31;

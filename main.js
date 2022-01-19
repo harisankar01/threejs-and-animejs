@@ -1,6 +1,5 @@
 import * as THREE from 'three'
 import anime from 'animejs'
-import { FBXLoader } from 'three/examples/jsm/loaders/FBXLoader.js';
 import { lights,Controls,spot,spear,createLight,rotate } from './lights';
 import { add,delay,lay,visible,last } from './extra';
 import { but } from './final';
@@ -29,29 +28,8 @@ scene.add(light);
 scene.add(light.target)
 const control=Controls(camera,renderer);
 const game=add(scene);
-let mixer, action,ref;
-const loader= new FBXLoader();
-loader.load( './assets/drone.fbx', function ( object ) {
-  object.position.set(-90,20,100);
-    object.scale.set(0.1,0.1,0.1);
-    object.rotateX(210);
-    ref=object;
-    object.visible=false;
-  mixer = new THREE.AnimationMixer( object );
-	action = mixer.clipAction( object.animations[ 0 ] );
-  object.layers.set(2);
-  object.traverse( function ( child ) {
-        child.castShadow = true;
-        child.receiveShadow = true;
-        child.color=0x351212;
-        child.autorotate=true;
-					} );
-scene.add( object );
-}, undefined, function ( error ) {
-	console.error( error );
-} );
 const ligh=lights();
-const img=new THREE.TextureLoader().load('./assets/img2.jpeg');
+const img=new THREE.TextureLoader().load('./images/img2.jpeg');
 let t=0;
 var frame = 0,
 maxFrame = 500,
@@ -61,7 +39,7 @@ const raycaster = new THREE.Raycaster();
 const lighet=lay(raycaster,torus,camera,scene,control);
 const butr=document.getElementById('but');
 butr.addEventListener('click',function (){
-  but(lighet,action,ref,sper,butr,nw);
+  but(lighet,sper,butr,nw);
 })
 const nw=document.querySelector('.letter');
 let theme = document.getElementsByTagName('link')[1];
@@ -115,18 +93,13 @@ function ani(){
         secs = (now - lt) / 1000,
         per = frame / maxFrame,
         bias=1 - Math.abs(0.5 - per) / 0.5;
-    rotate(torus,ref,revo,time)
+    rotate(torus,revo,time)
 time+=10000;
-  if(ref.position.x>140){
-    ref.position.setX(-100);
-  }
   sper.position.z-=0.8;
    if(camera.position.z>-6){
      last(control,torus,ligh,light,id,theme);
     }
   control.update();
-  const delta = clock.getDelta();
-	 if ( mixer ) mixer.update( delta );     
 render();
  if (secs > 1 / fps) {
             light.target.position.set(-1 * 2 * bias, 0, 0);
