@@ -5,6 +5,6 @@ export default defineConfig({
     chunkSizeWarningLimit: 800,
   },
   rollupOptions: {
-      external: ['three', 'vuetify']
+      external: THREE
     }
 })
