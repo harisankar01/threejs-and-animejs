@@ -5,6 +5,18 @@
 
 https://user-images.githubusercontent.com/90249023/164298581-d1d4ad2d-a841-446f-939f-0366abdc2c49.mp4
 <h1>DESCRIPTION</h1>
+  Install the **dependencies** with npm
+  
+```
+npm install
+```
+
+Then run the **development server** to see the space visualization in the web with,
+
+```
+npm run dev
+```
+
 <blockquote>TOOLS USED</blockquote>
   <dl>
   <dt>Three js</dt>
