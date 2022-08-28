@@ -3,7 +3,7 @@
 
 ## Checkout the website in action in this video.
 
-![](https://youtu.be/UsAnkYKxhFE)
+![Youtube(https://www.youtube.com/watch?v=UsAnkYKxhFE)](https://www.youtube.com/watch?v=UsAnkYKxhFE)
 <h1>DESCRIPTION</h1>
   Install the **dependencies** with npm
   
