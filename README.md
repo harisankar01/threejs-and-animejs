@@ -3,7 +3,7 @@
 
 ## Checkout the website in action in this video.
 
-https://user-images.githubusercontent.com/90249023/164298581-d1d4ad2d-a841-446f-939f-0366abdc2c49.mp4
+![https://youtu.be/UsAnkYKxhFE]
 <h1>DESCRIPTION</h1>
   Install the **dependencies** with npm
   
