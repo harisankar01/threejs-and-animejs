@@ -1,28 +1,32 @@
-<h1>THREE JS AND ANIME JS</h1>
-<h2>This is an project on three js and anime js to make exicting animations and effects on any website</h2>
+# THREE JS AND ANIME JS
+### This is an experimental project using three js and anime js to make three dimensional effects and animations in a website. This project was bootstraped with Vite.
 
-## Checkout the website in action in this video.
+## Checkout the live website in action on this video.
 
-![Youtube(https://www.youtube.com/watch?v=UsAnkYKxhFE)](https://www.youtube.com/watch?v=UsAnkYKxhFE)
-<h1>DESCRIPTION</h1>
-  Install the **dependencies** with npm
+[![Watch the video](https://img.youtube.com/vi/UsAnkYKxhFE/maxresdefault.jpg)](https://youtu.be/UsAnkYKxhFE)
+# Local Development
+
+Clone the repository using `git` and move into the folder,
+
+```
+git clone https://github.com/harisankar01/threejs-and-animejs.git
+cd threejs-and-animejs
+```
+
+Install the **dependencies** with npm
   
 ```
 npm install
 ```
 
-Then run the **development server** to see the space visualization in the web with,
+To view space visualized inside a web browser,**run** the development server with the following command,
 
 ```
 npm run dev
 ```
+# TOOLS USED
+  The important libraries used in this project are:
+  - Three js: An library to make 3d effects and make your site feel alive [Three js](https://github.com/mrdoob/three.js) 
+  - Anime js: An library to make efects and animations. Very smooth and scalable animations can be made using the library [Anime js](https://github.com/juliangarnier/anime)
 
-<blockquote>TOOLS USED</blockquote>
-  <dl>
-  <dt>Three js</dt>
-  <dd>An library to make 3d effects and make your site feel alive <strong>LINK: https://github.com/mrdoob/three.js </strong></dd>
-  <dt>Anime js</dt>
-  <dd>An library to make efects and animations. The animations are very smooth <strong>LINK:https://github.com/juliangarnier/anime
-</dd>
-  </dl>
   
